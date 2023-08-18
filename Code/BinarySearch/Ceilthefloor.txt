@@ -1,0 +1,43 @@
+import java.util.* ;
+import java.io.*; 
+public class Solution {
+    public static int ceilingInSortedArray(int n, int x, int[] arr) {
+        // Write your code here.
+        Arrays.sort(arr);
+        System.out.print(findfloor(arr,n,x)+" ");
+        return findceil(arr, n, x);
+        
+    }
+    public static int findceil(int[]arr,int n,int x){
+        int low=0;
+        int high=n-1;
+        int ans=-1;
+        while(low<=high){
+            int mid=low+(high-low)/2;
+            if(arr[mid]>=x){
+                ans=mid;
+                high=mid-1;
+            }else{
+                low=mid+1;
+            }
+        }
+        return ans;
+
+    }
+    public static int findfloor(int[]arr,int n,int x){
+        int low=0;
+        int high=n-1;
+        int ans=-1;
+        while(low<=high){
+            int mid=low+(high-low)/2;
+            if(arr[mid]<=x){
+                ans=mid;
+                low=mid+1;
+            }else{
+                high=mid-1;
+            }
+        }
+        return ans;
+    }
+    
+}
