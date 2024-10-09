@@ -10,7 +10,7 @@ class Solution {
         if (a.equals("0")) {
             return 0;
         }
-        if(a.equals("1")){
+        if(a.equals("1")){ 
             return 1;
         }
         
