@@ -2,10 +2,10 @@
 class Solution {
     int thirdLargest(int arr[]) {
         // Your code here
-          int max1 = Integer.MIN_VALUE;
+        int max1 = Integer.MIN_VALUE;
         int max2 = Integer.MIN_VALUE;
         int max3 = Integer.MIN_VALUE;
-        
+         
         for(int num: arr){
             if(num > max1){
                 max3 = max2;
