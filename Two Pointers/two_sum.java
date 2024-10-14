@@ -18,6 +18,7 @@ class Solution {
 
 
   // two - pointer approach - O(NLogN)
+//   sort(arr,0,arr.length-1);
 //   int i = 0, j = n-1;
 //   while(i< j){
 //       int sum = arr[i] + arr[j];
