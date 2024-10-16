@@ -8,7 +8,7 @@ class Solution {
         
         for(int i=0;i<N;i++){
             sum += A[i];
-            
+             
             
             if(sum == K){
                 maxlen = Math.max(maxlen, i+1);
