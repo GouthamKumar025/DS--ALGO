@@ -37,7 +37,6 @@ class Solution {
                 right ++;
             }
         }
-        
         while(left <= mid){
             temp.add(arr[left]);
             left ++;
