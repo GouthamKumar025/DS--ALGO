@@ -1,3 +1,5 @@
+// Binary Search application problem - aggressive cows
+
 class Solution {
     public static int solve(int[] stalls, int k) {
         int n = stalls.length;
