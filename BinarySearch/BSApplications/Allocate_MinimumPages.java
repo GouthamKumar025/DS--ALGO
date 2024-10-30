@@ -4,7 +4,7 @@ class Solution {
             return -1;
         }
         int low = Arrays.stream(bloomDay).min().orElseThrow();
-        int high = Arrays.stream(bloomDay).max().orElseThrow();
+        int high = Arrays.stream(bloomDay).max().orElseThrow(); 
         int minDays = -1;
         while (low <= high) {
             int mid = low +(high-low) / 2;
