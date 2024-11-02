@@ -4,7 +4,7 @@ class Solution {
         int lb = lowerBound(nums,target);
         if(lb==n || nums[lb]!=target){
             return new int[]{-1,-1};
-        }
+        } 
         return new int[]{lb,upperBound(nums,target)-1};
     }
     public int lowerBound(int[]arr,int x){
